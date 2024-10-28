@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="container">
+      <div>
+        <label for="characterInput" class="form-label mt-4"
+          >Search your character</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="characterInput"
+          placeholder="Enter character name"
+        />
+      </div>
+      <button type="button" class="btn btn-secondary mt-2" id="searchBtn">Search</button>
+    </form>
+    <div
+      class="characters-container container d-flex flex-wrap gap-3 justify-content-center mt-3"
+    ></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+      integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
